@@ -1,0 +1,13 @@
+{
+    "name": "LED 7 SEGMENT",
+    "description": "Mục mở rộng sử dụng module màn hình led 7 đoạn 4 chữ",
+    "libs": [
+    ],
+    "blocks": [
+        "definition.js"
+    ],
+    "toolbox": "toolbox.xml",
+    "languages": {
+    },
+    "poster": "poster.png"
+}

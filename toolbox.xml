@@ -1,0 +1,11 @@
+<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+  <category name="LED 7SEG" colour="#D31313" icon="h-square">
+    <block type="xbot_led_7SEG_display">
+      <value name="value">
+        <shadow type="text">
+          <field name="TEXT">0</field>
+        </shadow>
+      </value>
+    </block>
+  </category>
+</xml>
