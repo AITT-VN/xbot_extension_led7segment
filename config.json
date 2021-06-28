@@ -1,6 +1,6 @@
 {
-    "name": "LED 7 SEGMENT",
-    "description": "Mục mở rộng sử dụng module màn hình led 7 đoạn 4 chữ",
+    "name": "Led 7 đoạn",
+    "description": "Mục mở rộng của xbot cho module led 7 đoạn",
     "libs": [
     ],
     "blocks": [
