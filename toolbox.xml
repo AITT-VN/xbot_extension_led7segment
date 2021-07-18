@@ -1,9 +1,41 @@
 <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
   <category name="LED 7SEG" colour="#D31313" icon="h-square">
-    <block type="xbot_led_7SEG_display">
+    <block type="xbot_led_7SEG_show_number">
       <value name="value">
         <shadow type="text">
           <field name="TEXT">0</field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="xbot_led_7SEG_show_text">
+      <value name="value">
+        <shadow type="text">
+          <field name="TEXT">abcd</field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="xbot_led_7SEG_scroll">
+      <value name="value">
+        <shadow type="text">
+          <field name="TEXT">1234</field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="xbot_led_7SEG_temperature">
+      <value name="value">
+        <shadow type="text">
+          <field name="TEXT">32</field>
+        </shadow>
+      </value>
+    </block>
+
+    <block type="xbot_led_7SEG_brightness">
+      <value name="value">
+        <shadow type="text">
+          <field name="TEXT">7</field>
         </shadow>
       </value>
     </block>
