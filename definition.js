@@ -5,7 +5,7 @@ Blockly.Blocks["xbot_led_7SEG_show_number"] = {
       nextStatement: null,
       previousStatement: null,
       tooltip: "",
-      message0: "%4 led 7 đoạn cổng %1 hiện số %2 %3",
+      message0: "%4 led 4 số cổng %1 hiện số %2 %3",
       args0: [
         {
           type: "field_dropdown",
@@ -30,7 +30,7 @@ Blockly.Blocks["xbot_led_7SEG_show_number"] = {
           "flipRtl": false
         }
       ],
-      tooltip: "Hiện số lên màn hình led 7 đoạn",
+      tooltip: "Hiện số lên màn hình led 4 số",
       helpUrl : ""
     });
   },
@@ -51,7 +51,7 @@ Blockly.Blocks["xbot_led_7SEG_show_text"] = {
       nextStatement: null,
       previousStatement: null,
       tooltip: "",
-      message0: "%4 led 7 đoạn cổng %1 hiện chữ %2 %3",
+      message0: "%4 led 4 số cổng %1 hiện chữ %2 %3",
       args0: [
         {
           type: "field_dropdown",
@@ -76,7 +76,7 @@ Blockly.Blocks["xbot_led_7SEG_show_text"] = {
           "flipRtl": false
         }
       ],
-      tooltip: "Hiện chữ lên màn hình led 7 đoạn",
+      tooltip: "Hiện chữ lên màn hình led 4 số",
       helpUrl : ""
     });
   },
@@ -97,7 +97,7 @@ Blockly.Blocks["xbot_led_7SEG_scroll"] = {
       nextStatement: null,
       previousStatement: null,
       tooltip: "",
-      message0: "%4 led 7 đoạn cổng %1 chạy chữ %2 %3",
+      message0: "%5 led 4 số cổng %1 chạy chữ %2 tốc độ (ms) %3 %4",
       args0: [
         {
           type: "field_dropdown",
@@ -112,6 +112,7 @@ Blockly.Blocks["xbot_led_7SEG_scroll"] = {
           ],
         },
         { type: "input_value", name: "value"},
+        { type: "input_value", name: "speed", check: "Number"},
         { type: "input_dummy" },
         {
           "type": "field_image",
@@ -122,7 +123,7 @@ Blockly.Blocks["xbot_led_7SEG_scroll"] = {
           "flipRtl": false
         }
       ],
-      tooltip: "Chạy dòng chữ lên màn hình led 7 đoạn",
+      tooltip: "Chạy dòng chữ lên màn hình led 4 số",
       helpUrl : ""
     });
   },
@@ -131,8 +132,9 @@ Blockly.Blocks["xbot_led_7SEG_scroll"] = {
 Blockly.Python['xbot_led_7SEG_scroll'] = function(block) {
   var dropdown_port = block.getFieldValue('port');
   var value_text = Blockly.Python.valueToCode(block, 'value', Blockly.Python.ORDER_MEMBER);
+  var speed = Blockly.Python.valueToCode(block, 'speed', Blockly.Python.ORDER_MEMBER);
   Blockly.Python.definitions_['import_led_7SEG_display'] = 'from tm1637 import tm1637';
-  var code = 'tm1637.scroll(' + dropdown_port + ', ' + value_text + ')\n';
+  var code = 'tm1637.scroll(' + dropdown_port + ', ' + value_text + ', ' + speed + ')\n';
   return code;
 };
 
@@ -143,7 +145,7 @@ Blockly.Blocks["xbot_led_7SEG_temperature"] = {
       nextStatement: null,
       previousStatement: null,
       tooltip: "",
-      message0: "%4 led 7 đoạn cổng %1 hiện nhiệt độ %2 %3",
+      message0: "%4 led 4 số cổng %1 hiện nhiệt độ %2 %3",
       args0: [
         {
           type: "field_dropdown",
@@ -168,7 +170,7 @@ Blockly.Blocks["xbot_led_7SEG_temperature"] = {
           "flipRtl": false
         }
       ],
-      tooltip: "Hiện nhiệt độ lên màn hình led 7 đoạn",
+      tooltip: "Hiện nhiệt độ lên màn hình led 4 số",
       helpUrl : ""
     });
   },
@@ -189,7 +191,7 @@ Blockly.Blocks["xbot_led_7SEG_brightness"] = {
       nextStatement: null,
       previousStatement: null,
       tooltip: "",
-      message0: "%4 led 7 đoạn cổng %1 thay đổi độ sáng %2 %3 (0-7)",
+      message0: "%4 led 4 số cổng %1 thay đổi độ sáng (0-7) %2 %3",
       args0: [
         {
           type: "field_dropdown",
@@ -214,13 +216,13 @@ Blockly.Blocks["xbot_led_7SEG_brightness"] = {
           "flipRtl": false
         }
       ],
-      tooltip: "Thay đổi độ sáng của màn hình led 7 đoạn",
+      tooltip: "Thay đổi độ sáng của màn hình led 4 số",
       helpUrl : ""
     });
   },
 };
 
-Blockly.Python['xbot_led_7SEG_temperature'] = function(block) {
+Blockly.Python['xbot_led_7SEG_brightness'] = function(block) {
   var dropdown_port = block.getFieldValue('port');
   var value_text = Blockly.Python.valueToCode(block, 'value', Blockly.Python.ORDER_MEMBER);
   Blockly.Python.definitions_['import_led_7SEG_display'] = 'from tm1637 import tm1637';
