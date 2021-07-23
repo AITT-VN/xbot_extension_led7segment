@@ -1,7 +1,7 @@
 Blockly.Blocks["xbot_led_7SEG_show_number"] = {
   init: function () {
     this.jsonInit({
-      colour: "#D31313",
+      colour: "#ff3399",
       nextStatement: null,
       previousStatement: null,
       tooltip: "",
@@ -47,7 +47,7 @@ Blockly.Python['xbot_led_7SEG_show_number'] = function(block) {
 Blockly.Blocks["xbot_led_7SEG_show_text"] = {
   init: function () {
     this.jsonInit({
-      colour: "#D31313",
+      colour: "#ff3399",
       nextStatement: null,
       previousStatement: null,
       tooltip: "",
@@ -93,7 +93,7 @@ Blockly.Python['xbot_led_7SEG_show_text'] = function(block) {
 Blockly.Blocks["xbot_led_7SEG_scroll"] = {
   init: function () {
     this.jsonInit({
-      colour: "#D31313",
+      colour: "#ff3399",
       nextStatement: null,
       previousStatement: null,
       tooltip: "",
@@ -141,7 +141,7 @@ Blockly.Python['xbot_led_7SEG_scroll'] = function(block) {
 Blockly.Blocks["xbot_led_7SEG_temperature"] = {
   init: function () {
     this.jsonInit({
-      colour: "#D31313",
+      colour: "#ff3399",
       nextStatement: null,
       previousStatement: null,
       tooltip: "",
@@ -187,7 +187,7 @@ Blockly.Python['xbot_led_7SEG_temperature'] = function(block) {
 Blockly.Blocks["xbot_led_7SEG_brightness"] = {
   init: function () {
     this.jsonInit({
-      colour: "#D31313",
+      colour: "#ff3399",
       nextStatement: null,
       previousStatement: null,
       tooltip: "",
