@@ -4,7 +4,7 @@ Blockly.Blocks["xbot_led_7SEG_show_number"] = {
       colour: "#ff3399",
       nextStatement: null,
       previousStatement: null,
-      tooltip: "",
+      tooltip: "Hiện số lên màn hình led 4 số",
       message0: "%4 led 4 số cổng %1 hiện số %2 %3",
       args0: [
         {
@@ -30,8 +30,7 @@ Blockly.Blocks["xbot_led_7SEG_show_number"] = {
           "flipRtl": false
         }
       ],
-      tooltip: "Hiện số lên màn hình led 4 số",
-      helpUrl : ""
+      helpUrl: ""
     });
   },
 };
@@ -50,7 +49,6 @@ Blockly.Blocks["xbot_led_7SEG_show_text"] = {
       colour: "#ff3399",
       nextStatement: null,
       previousStatement: null,
-      tooltip: "",
       message0: "%4 led 4 số cổng %1 hiện chữ %2 %3",
       args0: [
         {
@@ -77,7 +75,7 @@ Blockly.Blocks["xbot_led_7SEG_show_text"] = {
         }
       ],
       tooltip: "Hiện chữ lên màn hình led 4 số",
-      helpUrl : ""
+      helpUrl: ""
     });
   },
 };
@@ -124,7 +122,7 @@ Blockly.Blocks["xbot_led_7SEG_scroll"] = {
         }
       ],
       tooltip: "Chạy dòng chữ lên màn hình led 4 số",
-      helpUrl : ""
+      helpUrl: ""
     });
   },
 };
@@ -144,7 +142,6 @@ Blockly.Blocks["xbot_led_7SEG_temperature"] = {
       colour: "#ff3399",
       nextStatement: null,
       previousStatement: null,
-      tooltip: "",
       message0: "%4 led 4 số cổng %1 hiện nhiệt độ %2 %3",
       args0: [
         {
@@ -171,7 +168,7 @@ Blockly.Blocks["xbot_led_7SEG_temperature"] = {
         }
       ],
       tooltip: "Hiện nhiệt độ lên màn hình led 4 số",
-      helpUrl : ""
+      helpUrl: ""
     });
   },
 };
@@ -190,7 +187,6 @@ Blockly.Blocks["xbot_led_7SEG_brightness"] = {
       colour: "#ff3399",
       nextStatement: null,
       previousStatement: null,
-      tooltip: "",
       message0: "%4 led 4 số cổng %1 thay đổi độ sáng (0-7) %2 %3",
       args0: [
         {
@@ -217,7 +213,7 @@ Blockly.Blocks["xbot_led_7SEG_brightness"] = {
         }
       ],
       tooltip: "Thay đổi độ sáng của màn hình led 4 số",
-      helpUrl : ""
+      helpUrl: ""
     });
   },
 };
